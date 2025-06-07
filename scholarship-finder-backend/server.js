@@ -19,7 +19,7 @@ connectDB();
 // Middleware
 app.use(
   cors({
-    origin: 'http://localhost:3000', 
+    origin: process.env.CLIENT_URL || 'http://localhost:3000', 
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization'],
     credentials: true, 
@@ -51,6 +51,6 @@ app.use((err, req, res, next) => {
 });
 
 // Start server
-app.listen(PORT, '127.0.0.1', () => {
-  console.log(`Server is running on http://127.0.0.1:${PORT}`);
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
 });
