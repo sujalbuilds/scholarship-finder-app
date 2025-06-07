@@ -1,3 +1,84 @@
+# Scholarship Finder App
+
+A full-stack web application that helps users discover and apply for scholarships. Built with React (frontend) and Node.js/Express with MongoDB (backend).
+
+## Getting Started
+
+Follow these instructions to set up the project on your local machine.
+
+### 1. Clone the Repository
+
+```bash
+git clone <your-repo-url>
+cd scholarship-finder
+```
+
+### 2. Setup the Frontend
+
+```bash
+cd frontend
+npm install
+npm start
+```
+
+### 3. Setup the Backend
+
+```bash
+cd ../backend
+npm install
+node server.js
+```
+
+### 4. Create `.env` Files
+
+#### `frontend/.env`
+
+```
+REACT_APP_API_URL=http://localhost:3001
+```
+
+#### `backend/.env`
+
+```
+PORT=3001
+DB_URI=mongodb://localhost:27017/scholarship-finder
+JWT_SECRET=your_jwt_secret_key
+JWT_EXPIRES_IN=1d
+```
+
+### 5. Scrape Scholarships
+
+To populate the database with scholarships:
+
+```bash
+cd backend/scrapers
+node index.js
+```
+
+### 6. Register and Use the App
+
+* Visit the React app in your browser (typically at `http://localhost:3000`).
+* Register a new account.
+* Browse available scholarships and recommended scholarships (using matching scores).
+
+---
+
+## Tech Stack
+
+* **Frontend**: React, Axios, React Router
+* **Backend**: Node.js, Express.js, MongoDB, Mongoose, JWT
+* **Scraping**: Cheerio, Axios
+
+## License
+
+[MIT](LICENSE)
+
+---
+
+For any questions or contributions, feel free to open an issue or submit a pull request!
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
