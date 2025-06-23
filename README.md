@@ -23,7 +23,7 @@ npm install
 ### 3. Setup the Backend
 
 ```bash
-cd ../backend
+cd ../scholarship-finder-backend
 npm install
 ```
 
