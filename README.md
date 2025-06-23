@@ -9,7 +9,7 @@ Follow these instructions to set up the project on your local machine.
 ### 1. Clone the Repository
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/sujalbuilds/scholarship-finder-app
 cd scholarship-finder
 ```
 
